@@ -5,6 +5,9 @@
   "packages": {
     "": {
       "name": "Moodle",
+      "dependencies": {
+        "Moodle": "file:"
+      },
       "devDependencies": {
         "@babel/core": "7.17.5",
         "@babel/eslint-parser": "^7.21.3",
@@ -9544,6 +9547,10 @@
       "resolved": "https://registry.npmjs.org/mkdirp2/-/mkdirp2-1.0.5.tgz",
       "integrity": "sha512-xOE9xbICroUDmG1ye2h4bZ8WBie9EGmACaco8K8cx6RlkJJrxGIqjGqztAI+NMhexXBcdGbSEzI6N3EJPevxZw==",
       "dev": true
+    },
+    "node_modules/Moodle": {
+      "resolved": "",
+      "link": true
     },
     "node_modules/ms": {
       "version": "2.1.2",

@@ -30,7 +30,8 @@
     "@ckeditor/ckeditor5-remove-format": "^43.0.0",
     "@ckeditor/ckeditor5-select-all": "^43.0.0",
     "@ckeditor/ckeditor5-typing": "^43.0.0",
-    "@h5p/ckeditor5-table": "github:h5p/h5p-ckeditor-table#0.0.12"
+    "@h5p/ckeditor5-table": "github:h5p/h5p-ckeditor-table#0.0.12",
+    "ckeditor5-custom-build": "file:"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^43.0.0",
