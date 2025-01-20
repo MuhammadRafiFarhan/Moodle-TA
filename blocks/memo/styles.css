@@ -1,0 +1,57 @@
+/* Memo block container styling */
+.block_memo {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* Form styling */
+.block_memo form {
+    margin-bottom: 15px;
+}
+
+.block_memo textarea {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.block_memo input[type="submit"] {
+    background-color: #0073e6;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.block_memo input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Memo list styling */
+.block_memo ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.block_memo li {
+    padding: 8px 10px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.block_memo li:nth-child(odd) {
+    background-color: #f5f5f5;
+}
