@@ -17,27 +17,16 @@
 /**
  * Form for editing block_memo instances
  *
- * @package    block_memo
+ * @package    block_memo_block
  * @copyright  2025 YOUR NAME <your@email.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot . '/blocks/edit_form.php');
-
-class block_memo_edit_form extends block_edit_form {
+class block_memo_block_edit_form extends block_edit_form {
     protected function specific_definition($mform) {
-        // Add a header for memo block settings.
-        $mform->addElement('header', 'configheader', get_string('blocksettings', 'block'));
-
-        // Add a text input field for a default memo title.
-        $mform->addElement('text', 'config_title', get_string('defaulttitle', 'block_memo'));
-        $mform->setType('config_title', PARAM_TEXT);
-        $mform->setDefault('config_title', get_string('pluginname', 'block_memo'));
-
-        // Add a textarea for default memo content.
-        $mform->addElement('textarea', 'config_content', get_string('defaultcontent', 'block_memo'), 'wrap="virtual" rows="4" cols="50"');
-        $mform->setType('config_content', PARAM_TEXT);
-        $mform->setDefault('config_content', '');
+        $mform->addElement('textarea', 'config_text', get_string('configtext', 'block_memo_block'));
+        $mform->setType('config_text', PARAM_TEXT);
+        $mform->setDefault('config_text', 'Default Memo Text');
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/memo_block/db" VERSION="2025012100" COMMENT="Install file for Memo Block">
+    <TABLES>
+        <TABLE NAME="block_memo_settings" COMMENT="Memo block settings table">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" AUTO="true"/>
+                <FIELD NAME="memo_text" TYPE="text" NOTNULL="false"/>
+                <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="false"/>
+                <FIELD NAME="block_instance_id" TYPE="int" LENGTH="10" NOTNULL="false"/>
+                <FIELD NAME="created_at" TYPE="datetime" NOTNULL="true"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="userid" TYPE="index" FIELDS="userid"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

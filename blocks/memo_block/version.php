@@ -17,15 +17,15 @@
 /**
  * Version information for block_memo
  *
- * @package    block_memo
+ * @package    block_memo_block
  * @copyright  2025 YOUR NAME <your@email.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
  defined('MOODLE_INTERNAL') || die();
 
- $plugin->component = 'block_memo';
- $plugin->version = 2025011900;
- $plugin->requires = 2022041900; // Moodle 4.0
+ $plugin->component = 'block_memo_block';  // Full name of the plugin.
+ $plugin->version = 2025012100;  // Version number.
+ $plugin->requires = 2022111800;  // Minimum Moodle version required.
  $plugin->maturity = MATURITY_STABLE;
- $plugin->release = '1.0';
+ $plugin->release = 'v1.1';

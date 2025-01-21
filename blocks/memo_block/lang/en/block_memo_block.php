@@ -15,32 +15,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Capability definitions for block_memo
+ * English language pack for block_memo
  *
- * Documentation: {@link https://moodledev.io/docs/apis/subsystems/access}
- *
- * @package    block_memo
- * @category   access
+ * @package    block_memo_block
+ * @category   string
  * @copyright  2025 YOUR NAME <your@email.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- defined('MOODLE_INTERNAL') || die();
+defined('MOODLE_INTERNAL') || die();
 
- $capabilities = [
-     'block/memo:addinstance' => [
-         'captype' => 'write',
-         'contextlevel' => CONTEXT_BLOCK,
-         'archetypes' => [
-             'editingteacher' => CAP_ALLOW,
-             'manager' => CAP_ALLOW,
-         ],
-     ],
-     'block/memo:myaddinstance' => [
-         'captype' => 'write',
-         'contextlevel' => CONTEXT_USER,
-         'archetypes' => [
-             'user' => CAP_ALLOW,
-         ],
-     ],
- ];
+$string['pluginname'] = 'Memo Block';
+$string['memo_block:addinstance'] = 'Add a new memo block';
+$string['memo_block:myaddinstance'] = 'Add a new memo block to the My Moodle page';
+$string['configtext'] = 'Memo Text';
+$string['memo_text'] = 'Memo Text';
+$string['memo'] = 'Memo';
+$string['memosaved'] = 'Your memo has been saved successfully!';
+$string['memo_block:edit'] = 'Edit memo block content';
+$string['memo_block:view'] = 'View memo block content';

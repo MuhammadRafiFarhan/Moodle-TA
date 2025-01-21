@@ -15,24 +15,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * English language pack for block_memo
+ * Capability definitions for block_memo
  *
- * @package    block_memo
- * @category   string
+ * Documentation: {@link https://moodledev.io/docs/apis/subsystems/access}
+ *
+ * @package    block_memo_block
+ * @category   access
  * @copyright  2025 YOUR NAME <your@email.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+ defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Memo Block';
-$string['savememo'] = 'Save Memo';
-$string['blockstring'] = 'Your memos:';
-$string['memo:addinstance'] = 'Add a new Memo block';
-$string['memo:myaddinstance'] = 'Add a new Memo block to My Moodle';
-
-$string['enableblock'] = 'Enable Memo Block';
-$string['enableblockdesc'] = 'Enable or disable the Memo block for the entire site.';
-$string['defaultcontent'] = 'Default Memo Content';
-$string['defaultcontentdesc'] = 'The content that will be prefilled when a new memo block is added.';
-$string['memosaved'] = 'Your memo has been saved successfully!';
+ $capabilities = [
+    'block/memo_block:addinstance' => [
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_BLOCK,
+        'archetypes' => ['manager' => CAP_ALLOW, 'editingteacher' => CAP_ALLOW],
+        'clonepermissionsfrom' => 'moodle/site:manageblocks'
+    ],
+];
